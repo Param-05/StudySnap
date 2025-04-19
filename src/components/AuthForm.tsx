@@ -12,7 +12,7 @@ import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Loader2 } from 'lucide-react'
 import Link from 'next/link'
-import { loginAction, signupAction } from '@/actions/user'
+// import { loginAction, signupAction } from '@/actions/user'
 
 
 function Authform({ type }: Props) {
@@ -32,12 +32,12 @@ function Authform({ type }: Props) {
             let description
 
             if(isLoginForm) {
-                errorMessage = ( await loginAction(email, password) ).errorMessage
+                // errorMessage = ( await loginAction(email, password) ).errorMessage
                 title = 'Logged in'
                 description = 'You have successfully been logged in'
             }
             else {
-                errorMessage = ( await signupAction(email, password) ).errorMessage
+                // errorMessage = ( await signupAction(email, password) ).errorMessage
                 title = 'Signed up'
                 description = 'Check your email for a confirmation link'
             }
