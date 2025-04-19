@@ -30,7 +30,7 @@ async function Navbar() {
           priority
         ></Image>
         <h1 className="flex flex-col px-1 pb-1 text-2xl leading-6 font-semibold">
-          Notely AI
+          StudySnap
         </h1>
       </Link>
       <div className="flex gap-4">

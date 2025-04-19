@@ -1,6 +1,6 @@
 datasource db {
   provider = "postgresql"
-  url      = env("DB_URL")
+  url      = env("DATABASE_URL")
 }
 
 generator client {
@@ -19,7 +19,7 @@ model Note {
 
 model User {
   id    String     @id @default(uuid())
-  email String  @uniqueP
+  email String  @unique
   name  String?
   notes Note[]
   createdAt DateTime @default(now())

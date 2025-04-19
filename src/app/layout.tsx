@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/Providers/ThemeProvider";
 import NoteProvider from "@/Providers/NoteProvider";
 import { SidebarProvider } from "@/components/ui/sidebar";
 import  AppSidebar  from "@/components/AppSidebar";
+import { Toaster } from "sonner";
 
 
 const geistSans = Geist({
@@ -39,7 +40,7 @@ export default function RootLayout({
           <SidebarProvider>
             <AppSidebar />
           <div className="flex min-h-screen w-full flex-col">
-          <Header />
+          <Navbar />
           <main className="flex flex-1 flex-col px-4 pt-10 xl:px-">{children}</main>
           </div>
           </SidebarProvider>
